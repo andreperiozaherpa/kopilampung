@@ -47,11 +47,11 @@
                                         <div class="heading mb-0 sh-4 lh-1-25 text-uppercase">{!! $text !!}</div>
                                         <div class="text-medium text-muted mb-2 text-uppercase">Penyelesaian Tugas</div>
                                     </div>
-                                    @if ($d->status == 0)
-                                        <div class="circle align-content-center">
-                                            <div type="button" class="uploadFile btn btn-primary" data-id_tugas="{{ $d->id }}">UPLOAD FILE</div>
-                                        </div>
-                                    @endif
+                                    {{-- @if ($d->status == 0) --}}
+                                    <div class="circle align-content-center">
+                                        <div type="button" class="uploadFile btn btn-primary" data-id_tugas="{{ $d->id }}">UPLOAD FILE</div>
+                                    </div>
+                                    {{-- @endif --}}
                                 </div>
                             </div>
                         </div>

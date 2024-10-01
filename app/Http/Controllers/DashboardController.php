@@ -15,23 +15,26 @@ class DashboardController extends Controller
     public function index()
     {
         //
-        $get_data_tugas = ManagemenTugas::get();
 
         // lra
-        $get_data_excel_lra = Excel::toArray(new ExcelImport, storage_path('app/public/disk/tugas/240930sIzrn.xlsx'));
+        $get_data_tugas_lra = ManagemenTugas::where('nama_tugas', 'like', '%LAPORAN REALISASI ANGGARAN%')->first();
+        // dd($get_data_tugas->nama_tugas);
+        $get_data_excel_lra = Excel::toArray(new ExcelImport, storage_path('app/public/disk/tugas/' . $get_data_tugas_lra->nama_file));
         $get_table_header = $get_data_excel_lra[0][0];
         unset($get_data_excel_lra[0][0]);
         $get_table_body_lra = array_values($get_data_excel_lra[0]);
 
         // perbendaharaan
-        $get_data_excel_perben = Excel::toArray(new ExcelImport, storage_path('app/public/disk/tugas/240930BQReI.xlsx'));
+        $get_data_tugas_perben = ManagemenTugas::where('nama_tugas', 'like', '%perbendaharaan%')->first();
+        $get_data_excel_perben = Excel::toArray(new ExcelImport, storage_path('app/public/disk/tugas/' . $get_data_tugas_perben->nama_file));
         $get_table_header_perben = $get_data_excel_perben[0][0];
         unset($get_data_excel_perben[0][0]);
         $get_table_body_perben = array_values($get_data_excel_perben[0]);
         // dd($get_table_body_perben);
 
         // ipkd
-        $get_data_excel_ipkd = Excel::toArray(new ExcelImport, storage_path('app/public/disk/tugas/240930YdjFj.xlsx'));
+        $get_data_tugas_ipkd = ManagemenTugas::where('nama_tugas', 'like', '%Indeks Pengelolaan Keuangan Daerah%')->first();
+        $get_data_excel_ipkd = Excel::toArray(new ExcelImport, storage_path('app/public/disk/tugas/' . $get_data_tugas_ipkd->nama_file));
         $get_table_header_ipkd = $get_data_excel_ipkd[0][0];
         unset($get_data_excel_ipkd[0][0]);
         $get_table_body_ipkd = array_values($get_data_excel_ipkd[0]);
@@ -59,7 +62,8 @@ class DashboardController extends Controller
         $ipkd_collect = collect($ipkd_fix)->toJson();
 
         // apbd
-        $get_data_excel_apbd = Excel::toArray(new ExcelImport, storage_path('app/public/disk/tugas/240930vZmFU.xlsx'));
+        $get_data_tugas_apbd = ManagemenTugas::where('nama_tugas', 'like', '%Anggaran Pendapatan dan Belanja Daerah%')->first();
+        $get_data_excel_apbd = Excel::toArray(new ExcelImport, storage_path('app/public/disk/tugas/' . $get_data_tugas_apbd->nama_file));
         $get_table_header_apbd = $get_data_excel_apbd[0][0];
         unset($get_data_excel_apbd[0][0]);
         $get_table_body_apbd = array_values($get_data_excel_apbd[0]);
