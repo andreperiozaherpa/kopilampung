@@ -33,38 +33,6 @@
                                         <div class="d-flex justify-content-between">
                                             <div>
                                                 <div class="heading d-flex justify-content-between lh-1-25 mb-3">
-                                                    <span>{{ $apbd_fix[5]['label'] }}</span>
-                                                </div>
-                                                <div class="text-small text-muted mb-1">Rp.</div>
-                                                <div class="cta-1 text-primary">@currency($apbd_fix[5]['data'][4])</div>
-                                            </div>
-                                            <i data-acorn-icon="board-1" data-acorn-size="40" class="text-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4 col-xxl-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between">
-                                            <div>
-                                                <div class="heading d-flex justify-content-between lh-1-25 mb-3">
-                                                    <span>{{ $apbd_fix[4]['label'] }}</span>
-                                                </div>
-                                                <div class="text-small text-muted mb-1">Rp.</div>
-                                                <div class="cta-1 text-primary">@currency($apbd_fix[4]['data'][4])</div>
-                                            </div>
-                                            <i data-acorn-icon="sign" data-acorn-size="40" class="text-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4 col-xxl-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between">
-                                            <div>
-                                                <div class="heading d-flex justify-content-between lh-1-25 mb-3">
                                                     <span>{{ $apbd_fix[1]['label'] }}</span>
                                                 </div>
                                                 <div class="text-small text-muted mb-1">Rp.</div>
@@ -107,7 +75,38 @@
                                     </div>
                                 </div>
                             </div>
-
+                            <div class="col-12 col-lg-4 col-xxl-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <div class="heading d-flex justify-content-between lh-1-25 mb-3">
+                                                    <span>{{ $apbd_fix[5]['label'] }}</span>
+                                                </div>
+                                                <div class="text-small text-muted mb-1">Rp.</div>
+                                                <div class="cta-1 text-primary">@currency($apbd_fix[5]['data'][4])</div>
+                                            </div>
+                                            <i data-acorn-icon="board-1" data-acorn-size="40" class="text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-xxl-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <div class="heading d-flex justify-content-between lh-1-25 mb-3">
+                                                    <span>{{ $apbd_fix[4]['label'] }}</span>
+                                                </div>
+                                                <div class="text-small text-muted mb-1">Rp.</div>
+                                                <div class="cta-1 text-primary">@currency($apbd_fix[4]['data'][4])</div>
+                                            </div>
+                                            <i data-acorn-icon="sign" data-acorn-size="40" class="text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </section>
                 </div>
