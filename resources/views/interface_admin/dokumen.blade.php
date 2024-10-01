@@ -51,11 +51,13 @@
             {{-- <div id="addCardOverlaySpinner"> --}}
             <div class="card addCardOverlaySpinner">
                 <div class="card-body">
-                    <div class="row g-2 mb-5" id="kotakDriveFolder">
+                    <div class="row g-2 mb-5">
                         <span class="text-medium text-primary">Folder</span>
+                        <div id="kotakDriveFolder"></div>
                     </div>
-                    <div class="row g-2" id="kotakDrive">
+                    <div class="row g-2">
                         <span class="text-medium text-primary">FIle</span>
+                        <div id="kotakDrive"></div>
                     </div>
                 </div>
             </div>
