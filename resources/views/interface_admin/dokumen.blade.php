@@ -349,6 +349,7 @@
                 var back = $('#backs').attr('data-backs');
                 $('#folderData').val(path)
                 $('#kotakDrive').html('')
+                $('#kotakDriveFolder').html('')
                 ajaxRequest('dokumen/show', 'post', {
                     folder: path,
                     back: back
@@ -360,6 +361,7 @@
             var back = $(this).attr('data-backs');
             $('#folderData').val(back)
             $('#kotakDrive').html('')
+            $('#kotakDriveFolder').html('')
             ajaxRequest('dokumen/show', 'post', {
                 folder: back,
                 back: back
@@ -463,6 +465,7 @@
             var namaFolder = $('#namaFolder').val();
             var back = $('#backs').attr('data-backs');
             $('#kotakDrive').html('')
+            $('#kotakDriveFolder').html('')
             ajaxRequest('dokumen/store', 'post', {
                 folder: folder,
                 nama_folder: namaFolder,
