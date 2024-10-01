@@ -1,0 +1,61 @@
+.slides {
+    height: 200px;
+    object-fit: cover;
+}
+
+.button-card {
+    text-decoration: none;
+}
+
+// color
+.color-red {
+    color: #69252c;
+}
+.color-gold {
+    color: #cfb57e;
+}
+.color-white {
+    color: #fff;
+}
+
+// background
+.color-bg-red {
+    background-color: #69252c;
+}
+.color-bg-gold {
+    background-color: #cfb57e;
+}
+
+// hover
+.button-hover {
+    color: #69252c;
+    background-color: #cfb57e;
+}
+.button-hover:hover {
+    color: #cfb57e;
+    background-color: #69252c;
+}
+
+//
+.form-control:focus,
+.form-select:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: #69252c;
+    box-shadow: 0px 1px 1px rgba(105, 37, 44, 0.075) inset,
+        0px 0px 8px rgba(105, 37, 44, 0.5);
+    // outline: 0 none;
+}
