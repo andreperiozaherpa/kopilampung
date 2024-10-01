@@ -133,7 +133,7 @@
                 });
             },
             maxFiles: 1,
-            acceptedFiles: 'application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+            acceptedFiles: 'application/pdf,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
             thumbnailWidth: 160,
             dictDefaultMessage: '',
             previewTemplate: DropzoneTemplates.previewTemplate,
