@@ -53,7 +53,7 @@ class CalendarController extends Controller
             file_put_contents(public_path("/assets/json/google-events.json"), json_encode($data));
         } else {
             $data = [];
-            file_put_contents(public_path("/assets/json/google-events.json"), json_encode($data));
+            file_put_contents("/assets/json/google-events.json", json_encode($data));
         }
         return view('interface_admin.calendar');
     }
