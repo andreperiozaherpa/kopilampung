@@ -114,7 +114,7 @@
                 <div class="row p-0 m-0 mb-5">
                     <div class="col-6">
                         <section class="scroll-section" id="activityLogs">
-                            <h2 class="small-title">Data penata usaha </h2>
+                            <h2 class="small-title">Data penatausahaan </h2>
                             <div class="card">
                                 <div class="card-body mb-n2">
                                     <div class="sh-30 overflow-scroll py-2">
